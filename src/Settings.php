@@ -17,7 +17,7 @@ class Settings {
         if (!$so->isValid()) {
             throw new \Exception('Invalid Settings Object');
         }
-        $instance = new self;
+        $instance = new static;
         $instance->setIniFileNames($so->getSettingsFileNames());
         $instance->loadFiles();
         return $instance;
