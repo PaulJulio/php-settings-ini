@@ -1,7 +1,6 @@
 <?php
 use \PaulJulio\SettingsIni\Settings;
 use \PaulJulio\SettingsIni\SettingsSO;
-use \PaulJulio\SettingsIni\SettingsTestExtension;
 
 class SettingsTest extends PHPUnit_Framework_TestCase {
 

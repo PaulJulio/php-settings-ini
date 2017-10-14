@@ -33,7 +33,7 @@ class SettingsSO {
         return true;
     }
     /**
-     * @return string
+     * @return string[]
      */
     public function getSettingsFileNames() {
         return $this->settingsFileNames;

@@ -1,6 +1,8 @@
 <?php
 namespace PaulJulio\SettingsIni;
 
+use Exception;
+
 class Settings {
 
     /* @var array */
@@ -11,11 +13,11 @@ class Settings {
     /**
      * @param SettingsSO $so
      * @return Settings
-     * @throws \Exception
+     * @throws Exception
      */
     public static function Factory(SettingsSO $so) {
         if (!$so->isValid()) {
-            throw new \Exception('Invalid Settings Object');
+            throw new Exception('Invalid Settings Object');
         }
         $instance = new static;
         $instance->setIniFileNames($so->getSettingsFileNames());
